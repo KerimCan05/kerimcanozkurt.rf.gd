@@ -1,0 +1,17 @@
+body{
+    background-color: wheat;
+    font-family: 'Roboto';
+    font-size: 22px;
+    text-align: center
+}
+h1, h2, h3{
+    font-family: 'Aldrich',system-ui;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.link{
+    height: 50px;
+    width: 50px;
+}

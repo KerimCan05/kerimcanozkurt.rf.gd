@@ -1,1 +1,1 @@
-Personel Website hosted on [InfinityFree](https://www.infinityfree.com/)
+Personel Website hosted on [NeoCities](https://neocities.org/)

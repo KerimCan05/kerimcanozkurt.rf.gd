@@ -1,1 +1,1 @@
-Personel Website hosted on [NeoCities](https://neocities.org/)
+Personel Website hosted on [Neocities](https://neocities.org/)

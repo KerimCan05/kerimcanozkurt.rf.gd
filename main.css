@@ -11,12 +11,12 @@ footer a:visited {
     color: #aaaaaa;
 }
 body.artadopage{
-    background-color: rgba(168, 168, 168,);
+    background-color: rgba(168, 168, 168);
     background-image: none;
 }
 div.main{
     background-color: rgb(168, 168, 168);
-    font-family: 'Roboto';
+    font-family: 'Roboto', serif;
     font-size: 22px;
     text-align: center;
     color: black; !important;
@@ -78,7 +78,7 @@ div.pageLayout div.rightContent{
     float: left;
     text-align: right;
     color: white;
-    background-color: black;
+    background-color: #3c3c3c;
 }
 #lastfm{
     background-position: center;

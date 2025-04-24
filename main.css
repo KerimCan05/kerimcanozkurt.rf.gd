@@ -80,6 +80,9 @@ div.pageLayout div.rightContent{
     color: white;
     background-color: #3c3c3c;
 }
+div.pageLayout div.rightContent p{
+    padding-right: 5%;
+}
 #lastfm{
     background-position: center;
     background-size: cover;

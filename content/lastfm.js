@@ -1,13 +1,7 @@
-// Replace with your Last.fm API key and username
-const apiKey = '12018a50625c2c11a218c90597d65bf0'; // Your API key
-const username = 'necobey_'; // Your Last.fm username
+const url = `/lastfm-proxy.php`;
 
-// API endpoint for recent tracks
-const url = `https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=${username}&api_key=${apiKey}&format=json&limit=1`;
-
-// Function to calculate time difference
 function getTimeAgo(timestamp) {
-    const now = Math.floor(Date.now() / 1000); // Current time in seconds
+    const now = Math.floor(Date.now() / 1000);
     const secondsAgo = now - parseInt(timestamp, 10);
     const minutes = Math.floor(secondsAgo / 60);
     const hours = Math.floor(minutes / 60);
@@ -19,7 +13,6 @@ function getTimeAgo(timestamp) {
     return `${days} day${days === 1 ? '' : 's'} ago`;
 }
 
-// Fetch the data
 fetch(url)
     .then(response => {
         if (!response.ok) {
@@ -41,14 +34,13 @@ fetch(url)
         if (isNowPlaying) {
             displayText = `Currently listening:`;
         } else {
-            const timestamp = track.date.uts; // Unix timestamp in seconds
+            const timestamp = track.date.uts;
             const timeAgo = getTimeAgo(timestamp);
             displayText = `Last played:`;
             let playTime = timeAgo;
             document.getElementById('playedTime').textContent = playTime;
         }
 
-        // Update the paragraph
         document.getElementById('scrobbleInfo').textContent = displayText;
         document.getElementById('songName').textContent = trackName;
         document.getElementById('songName').href = trackUrl;

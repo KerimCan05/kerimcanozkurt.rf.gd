@@ -83,14 +83,14 @@ div.pageLayout div.rightContent{
 div.pageLayout div.rightContent p{
     padding-right: 5%;
 }
-#lastfm{
+#lastfm, #letterboxd{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 5%;
     padding-bottom: 5%;
 }
-#lastfm a{
+#lastfm a, #letterboxd a{
     line-height: 0.5;
     padding-right: 5%;
     color: #aaaaaa;

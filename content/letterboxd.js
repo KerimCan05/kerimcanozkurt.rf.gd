@@ -1,5 +1,5 @@
 const rssUrl = 'https://letterboxd.com/krmcn/rss/';
-const corsProxy = 'https://cors-anywhere.herokuapp.com/';
+const corsProxy = 'https://cors-get-proxy.sirjosh.workers.dev/?url=';
 const fullUrl = corsProxy + rssUrl;
 
 fetch(fullUrl)

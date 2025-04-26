@@ -1,5 +1,5 @@
 const rssUrl = 'https://letterboxd.com/krmcn/rss/';
-const corsProxy = 'https://cors-get-proxy.sirjosh.workers.dev/?url=';
+const corsProxy = 'https://cors.kerim-can05-ae1.workers.dev/?url=';
 const fullUrl = corsProxy + rssUrl;
 
 fetch(fullUrl)

@@ -23,7 +23,9 @@ fetch(fullUrl)
         const title = movie.querySelector('filmTitle').textContent;
         const titleLink = movie.querySelector('link').textContent;
         const year = movie.querySelector('filmYear').textContent;
-        const rating = movie.querySelector('memberRating').textContent;
+        const ratingText = movie.querySelector( 'memberRating').textContent;
+        let ratingMath = ratingText.replace(',', '.');
+        const rating = ratingMath * 2;
 
         console.log(moviePoster);
 
@@ -31,6 +33,6 @@ fetch(fullUrl)
         document.getElementById('movieTitle').textContent = title;
         document.getElementById('movieTitle').href = titleLink;
         document.getElementById('movieYear').textContent = year;
-        document.getElementById('movieRating').textContent = "Rating: " + rating + "/5";
+        document.getElementById('movieRating').textContent = "Rating: " + rating + "/10";
     })
     .catch(error => console.error('Error fetching RSS feed:', error));

@@ -10,10 +10,14 @@ div.main{
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    max-width: 1920px;
     margin-top: 1%;
     overflow: auto;
 }
-
+footer{
+    width: 70%;
+    max-width: 1920px;
+}
 div.main h1{
     font-family: 'Tektur',sans-serif;
 }
@@ -44,4 +48,38 @@ div.seperator{
 #stickyNotes p{
     color: black;
     line-height: 1.1;
+}
+#about a{
+    margin-top: 10px;
+}
+#mail{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2%;
+}
+#mail a{
+    margin: 10px;
+}
+#giscus{
+    padding: 50px;
+}
+#links{
+    text-align: center;
+}
+#links a{
+    padding: 15px;
+}
+@media only screen and (max-width: 1100px){
+    div.main{
+        width: 95%;
+    }
+    footer{
+        width: 95%;
+    }
+    #mail{
+        width: 95%;
+    }
+    #giscus{
+        padding: 20px;
+    }
 }

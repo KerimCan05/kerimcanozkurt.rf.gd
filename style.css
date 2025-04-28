@@ -69,6 +69,10 @@ div.seperator{
 #links a{
     padding: 15px;
 }
+#youtube{
+    height: 315px;
+    border: white 10px solid;
+}
 @media only screen and (max-width: 1100px){
     div.main{
         width: 95%;
@@ -81,5 +85,12 @@ div.seperator{
     }
     #giscus{
         padding: 20px;
+    }
+    #youtube{
+        max-height: 200px;
+        border: white 2px solid;
+    }
+    a, p{
+        font-size: 10px;
     }
 }

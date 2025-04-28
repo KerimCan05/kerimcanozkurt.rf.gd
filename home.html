@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Can Özkurt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/content/images/favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="content/lastfm.js"></script>
+    <script src="content/letterboxd.js"></script>
+    <script src="content/main.js"></script>
+    <script>
+        window.onload = function(){
+            loadNotes()
+        }
+    </script>
+</head>
+<body style="background-color: powderblue;">
+
+    <div class="main">
+        <div class="w3-bar w3-black">
+            <a href="home.html" class="w3-bar-item w3-button">Home</a>
+            <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+            <a href="experience.html" class="w3-bar-item w3-button">Experience</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            <a href="artado.html" class="w3-bar-item w3-button">Artado</a>
+        </div>
+
+        <div class="main1">
+            <div class="w3-card w3-black">
+                <h1 style="padding: 10px">Welcome</h1>
+            </div>
+
+            <div class="w3-card w3-white" style="padding: 10px; padding-top: 0;">
+                <h1 style="padding-top: 5px">Can Özkurt</h1>
+                <p>Computer Programing student at Istanbul University-Cerrahpaşa<br>Tester and Designer ar Artado Project<br>Horrible person.</p>
+            </div><br>
+
+            <div class="w3-card w3-white" style="padding: 20px">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_cSVRmRYdGk?si=lt2MWR6ehOSNVEAe" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin:auto; border: black 10px solid"></iframe>
+            </div>
+
+
+        </div>
+
+        <div class="seperator"><p>‎</p></div>
+
+        <div class="main2" style="line-height: 0.8">
+            <br>
+            <div class="w3-card w3-black" style="padding: 5px">
+                <p style="text-align: left; padding-left: 15px;">Last.FM</p>
+                <div id="lastfm">
+                    <div style="background-color: rgba(0,0,0,0.50); padding-top: 5%; padding-bottom: 5%">
+                        <p id="scrobbleInfo">Loading</p>
+                        <a id="songName" href=""></a>
+                        <p id="artistName"></p>
+                        <p id="albumName"></p>
+                        <p id="playedTime"></p>
+                    </div>
+                </div>
+            </div><br>
+            <div class="w3-card w3-black" style="padding: 5px">
+                <p style="text-align: left; padding-left: 15px;">Letterboxd</p>
+                <div id="letterboxd">
+                    <div style="background-color: rgba(0,0,0,0.50); padding-top: 10%; padding-bottom: 5%">
+                        <a id="movieTitle" href=""></a>
+                        <p id="movieYear"></p>
+                        <p id="movieRating"></p>
+                    </div>
+                </div>
+            </div><br>
+            <div class="w3-card-4 w3-yellow" id="stickyNotes" style="padding: 5px; margin-bottom: 50px;">
+                <p style="text-align: left; padding-left: 15px;">Notes</p><br>
+                <p id="noteText"></p>
+            </div>
+        </div>
+    </div>
+    <footer class="w3-container w3-black" style="margin-top: 20px; width: 70%; margin-left: auto; margin-right: auto; padding-bottom: 10px; padding-top: 10px">
+        <a href="https://github.com/KerimCan05/kerimcanozkurt.rf.gd">This page is open-source</a>
+    </footer>
+</body>
+</html>

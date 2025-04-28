@@ -2,67 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Artado Project</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <link href='main.css' rel='stylesheet'>
+    <title>Can Özkurt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/content/images/favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         body{
-            background-color:#1a1a1a;
-            color: white;
-            font-size: 15px;
+            background-color: #1a1a1a !important;
         }
-        a{
-            color: white;
-        }
-        img{
-            border-radius: 100%;
-        }
-        table{
-            width: 100%;
-            table-layout: fixed;
+        p{
+            color: black !important;
         }
     </style>
 
 </head>
-<body class="artadopage">
-    <h2 style="margin-top: 2%; font-size: 30px">Can Özkurt</h2>
-    <a href="index.html">Hakkında</a>
-    <a href="projects.html">Projeler</a>
-    <a href="experience.html">Deneyim</a>
-    <a href="contact.html">İletişim</a>
-    <a href="artado.html">Artado</a>
-    <hr style="width:100%;text-align:left;margin-left:0">
-    <div class="artadocontainer">
-        <img src="content/images/artado-yeni.png" style="margin-top: 25px">
-        <h1 style="margin-top: 3%; font-size: 45px">Artado Project</h1>
-        <p style="font-size: 25px">Artado özgür internet projesidir. Artado ürünleri özgür yazılımdır ve dostane bir toplumun parçasıdırlar.</p>
-        <br>
-        <table>
-            <tr>
-                <td><img id="search" src="content/images/search.webp"></td>
-                <td><img id="devs" src="content/images/devs.webp"></td>
-                <td><img id="celer" src="content/images/celer.webp"></td>
-                <td><img id="arus" src="content/images/arus.webp"></td>
-            </tr>
-            <tr>
-                <td>Artado Search</td>
-                <td>Artado Devs</td>
-                <td>Celer Browser</td>
-                <td>Arus OS</td>
-            </tr>
-        </table>
-        <p id="artado"></p>
-        <p style="margin-top: 12%">Daha fazlası için:</p>
-        <table>
-            <tr>
-                <td><a href="https://artado.xyz/">Artado Ana Sayfası</a></td>
-                <td><a href="https://github.com/Artado-Project">Artado GitHub</a></td>
-                <td><a href="https://forum.artado.xyz/">Artado Forum</a></td>
-            </tr>
-        </table>
+<body style="background-color: powderblue;">
+
+    <div class="main">
+        <div class="w3-bar w3-black">
+            <a href="home.html" class="w3-bar-item w3-button">Home</a>
+            <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+            <a href="experience.html" class="w3-bar-item w3-button">Experience</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            <a href="artado.html" class="w3-bar-item w3-button">Artado</a>
+        </div>
+
+        <div class="main1">
+            <div class="w3-card w3-white">
+                <h1 style="padding: 10px">Artado Project</h1>
+                <p style="padding: 10px">Artado advocates for an internet where everyone can freely exchange information, respect privacy and express ideas without censorship.</p>
+            </div><br>
+
+            <div class="w3-card-4">
+                <header class="w3-container w3-blue">
+                    <h1><img src="content/images/search.webp" height="64" width="64"/> Artado Search </h1>
+                </header>
+                <div class="w3-container w3-white">
+                    <p>Artado Search is an open source, private and highly customizable search engine.</p>
+                </div>
+            </div><br>
+
+            <div class="w3-card-4">
+                <header class="w3-container w3-green">
+                    <h1><img src="content/images/celer.webp" height="64" width="64"/> Celer Browser</h1>
+                </header>
+            <div class="w3-container w3-white">
+                <p>Celer Browser is a fast, customizable and independent browser.</p>
+            </div><br>
+
+            <div class="w3-card-4">
+                <header class="w3-container w3-light-blue">
+                    <h1><img src="content/images/arus.webp" height="64" width="64"/> Arus OS</h1>
+                </header>
+                <div class="w3-container w3-white">
+                    <p>A unique, independent Linux-based operating system with complete customization.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="seperator"><p>‎</p></div>
+
+        <div class="main2" style="line-height: 0.8">
+            <br>
+            <img src="content/images/artado-yeni.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/><br>
+            <div class="w3-card w3-white">
+                <h1 style="padding: 15px; text-align: left">Artado Links</h1><br>
+                <a href="https://artado.xyz/"><p>Artado Homepage</p></a>
+                <a href="https://github.com/Artado-Project"><p>Artago Github</p></a>
+                <a href="https://forum.artado.xyz/"><p>Artado Forum</p></a>
+            </div>
+        </div>
     </div>
-    <script src="content/artado.js"></script>
+    <footer class="w3-container w3-black" style="margin-top: 20px; width: 70%; margin-left: auto; margin-right: auto; padding-bottom: 10px; padding-top: 10px">
+        <a href="https://github.com/KerimCan05/kerimcanozkurt.rf.gd">This page is open-source</a>
+    </footer>
 </body>
 </html>

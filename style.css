@@ -1,0 +1,39 @@
+div.main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 1%;
+    overflow: auto;
+}
+
+div.main h1{
+    font-family: 'Tektur',sans-serif;
+}
+div.main1{
+    width: 65%;
+    float: left;
+}
+div.main2 a, div.main2 p{
+    margin-right: 5%;
+    color: white;
+}
+div.main2{
+    width: 30%;
+    float: left;
+    text-align: right;
+}
+div.seperator{
+    width: 5%;
+    float: left;
+}
+#lastfm, #letterboxd {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#stickyNotes p{
+    color: black;
+    line-height: 1.1;
+}

@@ -9,14 +9,14 @@ body{
 div.main{
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
-    max-width: 1920px;
+    max-width: 1350px;
+    width: 90%;
     margin-top: 1%;
     overflow: auto;
 }
 footer{
-    width: 70%;
-    max-width: 1920px;
+    width: 90%;
+    max-width: 1350px;
 }
 div.main h1{
     font-family: 'Tektur',sans-serif;
@@ -75,28 +75,6 @@ div.seperator{
 }
 #gif{
     padding: 15px;
-}
-@media only screen and (max-width: 1200px){
-    div.main{
-        width: 95%;
-    }
-
-    footer{
-        width: 100%;
-    }
-    #mail{
-        width: 95%;
-    }
-    #giscus{
-        padding: 20px;
-    }
-    #youtube{
-        max-height: 200px;
-        border: white 2px solid;
-    }
-    #gif{
-        padding: 5px;
-    }
 }
 @media only screen and (max-width: 900px){
     div.main{

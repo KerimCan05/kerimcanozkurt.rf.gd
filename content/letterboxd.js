@@ -11,8 +11,6 @@ fetch(fullUrl)
     })
     .then(data => {
 
-        console.log('Raw XML:', data);
-
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(data, 'text/xml');
         const movie = xmlDoc.querySelector('item');

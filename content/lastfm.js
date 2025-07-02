@@ -21,7 +21,6 @@ fetch(url)
         return response.json();
     })
     .then(data => {
-        console.log(data)
         const track = data.recenttracks.track[0];
         const trackName = track.name;
         const trackUrl = track.url;

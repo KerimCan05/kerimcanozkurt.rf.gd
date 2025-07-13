@@ -1,4 +1,4 @@
-const url = `/lastfm-proxy.php`;
+const url = `js/lastfm-proxy.php`;
 
 function getTimeAgo(timestamp) {
     const now = Math.floor(Date.now() / 1000);

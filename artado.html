@@ -2,85 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Can Özkurt</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/content/images/favicon.ico">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body{
-            background-color: #1a1a1a;
-            background-image: none;
-        }
-        p{
-            color: black !important;
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
 </head>
-<body>
+<body class="bg-white">
 
-    <div class="main">
-        <div class="w3-bar w3-black">
-            <a href="home.html" class="w3-bar-item w3-button">Home</a>
-            <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-            <a href="experience.html" class="w3-bar-item w3-button">Experience</a>
-            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-            <a href="artado.html" class="w3-bar-item w3-button">Artado</a>
-        </div>
-
-        <div class="main1">
-            <div class="w3-card w3-white">
-                <h1 style="padding: 10px">Artado Project</h1>
-                <p style="padding: 10px">Artado advocates for an internet where everyone can freely exchange information, respect privacy and express ideas without censorship.</p>
-            </div><br>
-
-            <div class="w3-card-4">
-                <header class="w3-container w3-blue">
-                    <h1><img src="content/images/search.webp" height="64" width="64"/> Artado Search </h1>
-                </header>
-                <div class="w3-container w3-white">
-                    <p>Artado Search is an open source, private and highly customizable search engine.</p>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1 text-white">Can Özkurt</span>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="artado.html">Artado</a></li>
+                    </ul>
                 </div>
-            </div><br>
-
-            <div class="w3-card-4">
-                <header class="w3-container w3-green">
-                    <h1><img src="content/images/celer.webp" height="64" width="64"/> Celer Browser</h1>
-                </header>
-            <div class="w3-container w3-white">
-                <p>Celer Browser is a fast, customizable and independent browser.</p>
-            </div><br>
-
-            <div class="w3-card-4">
-                <header class="w3-container w3-light-blue">
-                    <h1><img src="content/images/arus.webp" height="64" width="64"/> Arus OS</h1>
-                </header>
-                <div class="w3-container w3-white">
-                    <p>A unique, independent Linux-based operating system with complete customization.</p>
+            </div>
+        </nav>
+        <div class="row mt-4 justify-content-around">
+            <div class="col-12 col-md-8 mb-4">
+                <div class="card p-1 mb-3 bg-black">
+                    <div class="card-header bg-white">
+                        <div class="card-title h1">Artado Project</div>
+                    </div>
+                    <div class="card-body bg-dark text-white pb-0">
+                        <p>Artado advocates for an internet where everyone can freely exchange information, respect privacy and express ideas without censorship.</p>
+                    </div>
+                </div>
+                <div class="card p-1 mb-3 bg-black">
+                    <div class="card-header bg-primary text-white">
+                        <div class="card-title h1">Artado Search</div>
+                    </div>
+                    <div class="card-body bg-dark text-white pb-0">
+                        <p>Artado Search is an open source, private and highly customizable search engine.</p>
+                    </div>
+                </div>
+                <div class="card p-1 mb-3 bg-black">
+                    <div class="card-header bg-success text-white">
+                        <div class="card-title h1">Celer Browser</div>
+                    </div>
+                    <div class="card-body bg-dark text-white pb-0">
+                        <p>Celer Browser is a fast, customizable and independent browser.</p>
+                    </div>
+                </div>
+                <div class="card p-1 mb-3 bg-black">
+                    <div class="card-header bg-info">
+                        <div class="card-title h1">Arus OS</div>
+                    </div>
+                    <div class="card-body bg-dark text-white pb-0">
+                        <p>A unique, independent Linux-based operating system with complete customization.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card p-3">
+                    <div class="card-title h2">Right</div>
                 </div>
             </div>
         </div>
-        </div>
 
-        <div class="seperator"><p>‎</p></div>
-
-        <div class="main2" style="line-height: 0.8">
-            <br>
-            <img src="content/images/artado-yeni.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/><br>
-            <div class="w3-card w3-white" id="links">
-                <h1 style="padding: 15px; text-align: left">Artado Links</h1><br><br>
-                <a href="https://artado.xyz/" class="w3-btn w3-black">Artado Homepage</a><br><br>
-                <a href="https://github.com/Artado-Project" class="w3-btn w3-black">Artago Github</a><br><br>
-                <a href="https://forum.artado.xyz/" class="w3-btn w3-black">Artado Forum</a><br><br>
-            </div>
-        </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark">
+            <a href="https://github.com/KerimCan05/kerimcanozkurt.rf.gd" class="nav-link px-2 text-white">This page is open source</a>
+        </footer>
     </div>
-    <footer class="w3-container w3-black" style="margin-top: 20px; margin-left: auto; margin-right: auto; padding-bottom: 10px; padding-top: 10px">
-        <a href="https://github.com/KerimCan05/kerimcanozkurt.rf.gd">This page is open-source</a>
-    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.esm.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

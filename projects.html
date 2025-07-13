@@ -2,64 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Can Özkurt</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/content/images/favicon.ico">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="content/main.js"></script>
-    <script>
-        window.onload = function(){
-            loadNotes()
-        }
-    </script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
 </head>
-<body>
-    <div class="main">
-        <div class="w3-bar w3-black">
-            <a href="home.html" class="w3-bar-item w3-button">Home</a>
-            <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-            <a href="experience.html" class="w3-bar-item w3-button">Experience</a>
-            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-            <a href="artado.html" class="w3-bar-item w3-button">Artado</a>
+<body class="bg-dark">
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Can Özkurt</span>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="artado.html">Artado</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row mt-4 justify-content-around">
+            <div class="col-12 col-md-8 mb-4">
+                <div class="card p-1 mb-3 bg-secondary">
+                    <div class="card-header bg-black">
+                        <div class="card-title h1 text-white">Projects</div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 mx-5 p-1 bg-secondary" style="max-width: 540px;">
+                    <div class="card bg-dark text-white">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/pocket.jpg" class="img-fluid rounded-start" alt="Artado Pocket">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Artado Pocket</h5>
+                                    <p class="card-text">Freedom of Artado, is in palm of your hand.</p>
+                                    <p class="card-text"><small>In Development</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card p-3">
+                    <div class="card-title h2">Right</div>
+                </div>
+            </div>
         </div>
 
-        <div class="main1">
-            <div class="w3-card w3-black">
-                <h1 style="padding: 10px">Projects</h1>
-            </div>
-            <div class="w3-card w3-white" style="padding: 10px; line-height: 0.8">
-                <table width="100%">
-                    <tr>
-                        <td>
-                            <h2>Artado Pocket</h2>
-                            <h3>In development</h3>
-                            <p>Freedom of Artado, is in the palm of your hand.</p>
-                        </td>
-                        <td>
-                            <img src="content/images/pocket.jpg" width="150px"/>
-                        </td>
-                    </tr>
-                </table>
-
-            </div>
-        </div>
-
-        <div class="seperator"><p>‎</p></div>
-
-        <div class="main2" style="line-height: 0.8">
-            <div class="w3-card-4 w3-yellow" id="stickyNotes" style="padding: 5px; margin-bottom: 50px; margin-top: 10px">
-                <p style="text-align: left; padding-left: 15px;">Notes</p><br>
-                <p id="noteText"></p>
-            </div>
-        </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-white">
+            <a href="https://github.com/KerimCan05/kerimcanozkurt.rf.gd" class="nav-link px-2 text-body-secondary">This page is open source</a>
+        </footer>
     </div>
-    <footer class="w3-container w3-black" style="margin-top: 20px; margin-left: auto; margin-right: auto; padding-bottom: 10px; padding-top: 10px">
-        <a href="https://github.com/KerimCan05/kerimcanozkurt.rf.gd">This page is open-source</a>
-    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.esm.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

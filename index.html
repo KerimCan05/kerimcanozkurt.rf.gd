@@ -2,30 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Can Özkurt</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/content/images/favicon.ico">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <script src="content/index.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="js/lastfm.js"></script>
+    <script src="js/letterboxd.js"></script>
+
 </head>
-<body style="background-color: lightslategray;">
-    <div class="w3-container w3-red">
-        <h1>This page is under development</h1>
-        <p>but who cares, right?</p>
-    </div>
+<body class="bg-dark">
 
-    <div style="width: 70%; margin: auto;">
-        <h1 style="margin-top: 15%; text-align: center; font-family: 'Tektur',sans-serif;">Can Özkurt</h1>
-        <div style="margin: 0; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);">
-            <a href="javascript:welcomeButton()" class="w3-btn w3-black">Enter to the Wonderland</a>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light mt-2">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Can Özkurt</span>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="artado.html">Artado</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row mt-4 justify-content-around">
+            <div class="col-12 col-md-8 mb-4">
+                <div class="card p-1 text-white bg-secondary mb-3">
+                    <div class="card-header bg-black">
+                        <div class="card-title h1">Welcome</div>
+                    </div>
+                    <div class="card-body bg-dark">
+                        <p>Computer Programmer<br>Tester and Designer at Artado Project<br>Horrible person<br>Scott Pilgrim fan</p>
+                    </div>
+                </div>
+                <div class="card p-1 text-white bg-secondary mb-3">
+                    <div class="card-body bg-black">
+                        <div style="display: flex; justify-content: center; margin: auto"><iframe src="https://www.youtube-nocookie.com/embed/SE42hsnns5s?yt:stretch=16:9&vq=hd720p&autoplay=1&loop=0&color=white&iv_load_policy=3&rel=0&showinfo=0&autohide=1&controls=0&modestbranding=1" width="560" height="315" allowtransparency="true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe></div>                    </div>
+                </div>
+                <div class="card p-1 text-white bg-secondary mb-3">
+                    <div class="card-header bg-black">
+                        <div class="card-title h1">About This Page</div>
+                    </div>
+                    <div class="card-body bg-dark text-center">
+                        <a class="btn btn-primary" href="https://getbootstrap.com/" role="button">Bootstrap</a>
+                        <a class="btn btn-primary" href="https://github.com/KerimCan05/kerimcanozkurt.rf.gd" role="button">Page source</a>
+                        <a class="btn btn-primary" href="https://canozkurt.neocities.org/" role="button">Visit old website</a>
+                        <p class="mt-2 mb-0">2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card p-3 mb-3">
+                    <div class="card-title h2">deneme</div>
+                </div>
+                <div class="card p-1 text-white bg-secondary mb-3">
+                    <div class="card-header bg-black pb-3">
+                        <div class="card-title">Last.Fm</div>
+                        <div class="card-body bg-dark" id="lastfm" style="background-size: cover; background-position: center; background-repeat: no-repeat; ">
+                            <ul class="bg-black bg-opacity-75">
+                                <li class="list-group-item bg-transparent py-1" id="scrobbleInfo"></li>
+                                <a class="list-group-item bg-transparent py-1" href="#" id="songName"></a>
+                                <li class="list-group-item bg-transparent py-1" id="artistName"></li>
+                                <li class="list-group-item bg-transparent py-1" id="albumName"></li>
+                                <li class="list-group-item bg-transparent py-1" id="playedTime"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-1 text-white bg-secondary mb-3">
+                    <div class="card-header bg-black pb-3">
+                        <div class="card-title">Letterboxd</div>
+                        <div class="card-body bg-dark" id="letterboxd" style="background-size: cover; background-position: center; background-repeat: no-repeat; ">
+                            <ul class="bg-black bg-opacity-75">
+                                <a class="list-group-item bg-transparent py-2" href="#" id="movieTitle"></a>
+                                <li class="list-group-item bg-transparent py-2" id="movieYear"></li>
+                                <li class="list-group-item bg-transparent py-2" id="movieRating"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p id="unwelcome" style="text-align: center; margin-top: 5%"></p>
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-white">
+            <a href="https://github.com/KerimCan05/kerimcanozkurt.rf.gd" class="nav-link px-2 text-body-secondary">This page is open source</a>
+        </footer>
+
     </div>
 
 
 
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.esm.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

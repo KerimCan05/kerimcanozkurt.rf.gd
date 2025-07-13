@@ -2,112 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Can Özkurt</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/content/images/favicon.ico">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="content/main.js"></script>
-    <script>
-        window.onload = function(){
-            loadNotes()
-        }
-    </script>
-    <style>
-        img{
-            width: 60px;
-        }
-        td{
-            padding: 0;
-            width: 150px;
-            text-align: center;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
-<body>
+<body class="bg-dark">
 
-    <div class="main">
-        <div class="w3-bar w3-black">
-            <a href="home.html" class="w3-bar-item w3-button">Home</a>
-            <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-            <a href="experience.html" class="w3-bar-item w3-button">Experience</a>
-            <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-            <a href="artado.html" class="w3-bar-item w3-button">Artado</a>
-        </div>
-
-        <div class="main1">
-            <div class="w3-card w3-black">
-                <h1 style="padding: 10px">Contact</h1>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Can Özkurt</span>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="artado.html">Artado</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="w3-card w3-white">
-                <h1 style="padding: 10px">E-Mail</h1>
-                <div id="mail">
-                    <a href="mailto:kerim_can05@proton.me" class="w3-btn w3-black">kerim_can05@proton.me</a>
-                    <a href="mailto:kerim.can.ozkurt0@gmail.com" class="w3-btn w3-black">kerim.can.ozkurt0@gmail.com</a>
+        </nav>
+        <div class="row mt-4 justify-content-around">
+            <div class="col-12 col-md-8 mb-4">
+                <div class="card p-1 mb-3 bg-secondary">
+                    <div class="card-header bg-black">
+                        <div class="card-title h1 text-white">Contact</div>
+                    </div>
+                </div>
+                <div class="card p-1 mb-3 bg-secondary">
+                    <div class="card-header bg-black">
+                        <div class="card-title text-white">E-Mail</div>
+                    </div>
+                    <div class="card-body text-white bg-dark text-center">
+                        <a class="btn btn-primary" href="mailto:kerim.can.ozkurt0@gmail.com" role="button">kerim.can.ozkurt0@gmail.com</a>
+                        <a class="btn btn-primary" href="mailto:kerim_can05@proton.me" role="button">kerim_can05@proton.me</a>
+                    </div>
+                </div>
+                <div class="card p-1 mb-3 bg-secondary">
+                    <div class="card-header bg-black">
+                        <div class="card-title text-white">Social Media</div>
+                    </div>
+                    <div class="card-body text-white bg-dark text-center">
+                        <a class="btn btn-primary" href="https://github.com/KerimCan05" role="button">github/@KerimCan05</a>
+                        <a class="btn btn-primary" href="https://www.linkedin.com/in/can-ozkurt/" role="button">linkedin/can-ozkurt</a><br><br>
+                        <a class="btn btn-primary" href="https://matrix.to/#/@kerimcan05:matrix.org" role="button">@kerimcan05:matrix.org</a>
+                    </div>
                 </div>
 
-            </div><br>
-
-            <div class="w3-card w3-white">
-                <h1 style="padding: 10px">Social Media</h1>
-                <table class="w3-centered" style="margin: 0 auto;">
-                    <tr>
-                        <td>
-                            <a href="https://github.com/KerimCan05"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/refs/heads/main/icons/Github-Dark.svg"></a>
-                        </td>
-                        <td>
-                            <a href="https://www.linkedin.com/in/kerim-can-%C3%B6zkurt/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/refs/heads/main/icons/LinkedIn.svg"></a>
-                        </td>
-                        <td>
-                            <a href="https://mastodon.com.tr/@krmcn05"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/refs/heads/main/icons/Mastodon-Dark.svg"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <a href="https://matrix.to/#/@kerimcan05:matrix.org"><img class="link" style="width: 117px" src="https://matrix.org/images/matrix-logo.svg"></a>
-                        </td>
-                    </tr>
-                </table><br>
-            </div><br>
-
-            <div id="giscus" class="w3-card w3-white" style="padding-top: 0;">
-                <br>
-                <script src="https://giscus.app/client.js"
-                        data-repo="KerimCan05/kerimcanozkurt.rf.gd"
-                        data-repo-id="R_kgDONawE7g"
-                        data-category="General"
-                        data-category-id="DIC_kwDONawE7s4ClC0B"
-                        data-mapping="pathname"
-                        data-strict="0"
-                        data-reactions-enabled="1"
-                        data-emit-metadata="0"
-                        data-input-position="bottom"
-                        data-theme="light_high_contrast"
-                        data-lang="en"
-                        data-loading="lazy"
-                        crossorigin="anonymous"
-                        async>
-                </script>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card p-3">
+                    <div class="card-title h2">Right</div>
+                </div>
             </div>
         </div>
 
-        <div class="seperator"><p>‎</p></div>
-
-        <div class="main2" style="line-height: 0.8">
-            <div class="w3-card-4 w3-yellow" id="stickyNotes" style="padding: 5px; margin-bottom: 50px; margin-top: 10px">
-                <p style="text-align: left; padding-left: 15px;">Notes</p><br>
-                <p id="noteText"></p>
-            </div>
-        </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-white">
+            <a href="https://github.com/KerimCan05/kerimcanozkurt.rf.gd" class="nav-link px-2 text-body-secondary">This page is open source</a>
+        </footer>
     </div>
-    <footer class="w3-container w3-black" style="margin-top: 20px; margin-left: auto; margin-right: auto; padding-bottom: 10px; padding-top: 10px">
-        <a href="https://github.com/KerimCan05/kerimcanozkurt.rf.gd">This page is open-source</a>
-    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.esm.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

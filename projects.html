@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +12,9 @@
     <script src="js/main.js"></script>
 
 </head>
-<body class="bg-dark">
-
+<body background="images/background.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
     <div class="container">
-        <nav class="navbar mt-2 col-12 col-md-12 bg-body-tertiary"><br>
+        <nav class="navbar mt-2 col-12 col-md-12 bg-body-tertiary bg-opacity-50"><br>
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Can Özkurt</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -52,40 +51,36 @@
 
         <div class="row mt-4 justify-content-around">
             <div class="col-12 col-md-8 mb-4">
-                <div class="card p-1 mb-3 bg-secondary">
-                    <div class="card-header bg-black">
+                <div class="card mb-3 bg-secondary bg-opacity-10">
+                    <div class="card-header">
                         <div class="card-title h1 text-white">Projects</div>
                     </div>
                 </div>
 
-                <div class="card mb-3 mx-2 p-1 bg-secondary">
-                    <div class="card bg-dark text-white">
-                        <div class="row g-0">
-                            <div class="col-4 col-md-3">
-                                <img src="images/pocket.jpg" class="img-fluid rounded-start" alt="Artado Pocket">
-                            </div>
-                            <div class="col-8 col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Artado Pocket</h5>
-                                    <p class="card-text">Freedom of Artado, is in palm of your hand.</p>
-                                    <p class="card-text"><small>In Development</small></p>
-                                </div>
+                <div class="card text-white bg-secondary bg-opacity-10 p-1">
+                    <div class="row g-0">
+                        <div class="col-4 col-md-3 card-img">
+                            <img src="images/pocket.jpg" class="img-fluid rounded-start" alt="Artado Pocket">
+                        </div>
+                        <div class="col-8 col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Artado Pocket</h5>
+                                <p class="card-text">Freedom of Artado, is in palm of your hand.</p>
+                                <p class="card-text"><small>In Development</small></p>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
 
 
             </div>
             <div class="col-12 col-md-4">
-                <div class="card p-1 mb-3 bg-secondary text-white">
-                    <div class="card-header bg-black">
+                <div class="card mb-3 bg-opacity-10 bg-secondary text-white">
+                    <div class="card-header">
                         <div class="card-title">Local Time</div>
                     </div>
-                    <div class="card-body bg-dark text-center">
+                    <div class="card-body text-center">
                         <p id="timeZone"></p>
                         <p id="timeDisplay"></p>
                     </div>
@@ -93,7 +88,7 @@
             </div>
         </div>
 
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-white">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-white bg-opacity-50">
             <a href="https://github.com/KerimCan05/kerimcanozkurt.rf.gd" class="nav-link px-2 text-body-secondary">This page is open source</a>
         </footer>
     </div>

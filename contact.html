@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap-utilities.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <script src="js/main.js"></script>
+    <script src="js/clock.js"></script>
 </head>
 <body background="images/background.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
     <div class="container">
@@ -73,8 +73,23 @@
                         <a class="btn btn-primary mb-1" href="https://matrix.to/#/@kerimcan05:matrix.org" role="button">@kerimcan05:matrix.org</a>
                     </div>
                 </div>
-                <div>
-
+                <div class="card mb-3 bg-secondary bg-opacity-10">
+                    <div class="card-header"><div class="card-title text-white">Guestbook</div></div>
+                    <div class="card-body text-white text-center">
+                        <form id="guestbook" accept-charset="UTF-8">
+                            <div class="form-group">
+                                    <div class="form-floating mb-3"><input type="text" class="form-control bg-light bg-opacity-25 text-white" name="name" id="name" placeholder="Your Name"><label class="text-white" for="name">Your Name</label></div>
+                                    <div class="form-floating mb-3"><input type="text" class="form-control bg-light bg-opacity-25 text-white" name="mail" id="mail" placeholder="Your Name"><label class="text-white" for="mail">Your Mail Address</label></div>
+                                <div class="row mb-3">
+                                    <div class="input-group">
+                                        <textarea class="form-control bg-light bg-opacity-25 text-white" name="message" placeholder="Your Message" aria-label="Message" id="message"></textarea>
+                                        <button class="btn btn-outline-primary" name="submit" id="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <p id="confirmation"></p>
+                    </div>
                 </div>
 
             </div>
@@ -109,6 +124,7 @@
         </div>
 
     </div>
+    <script src="js/guestbook.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.esm.js"></script>
     <script src="js/bootstrap.bundle.js"></script>

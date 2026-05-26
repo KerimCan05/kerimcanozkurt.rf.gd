@@ -15,7 +15,7 @@
      exit;
  }
 
- $username = 'necobey_';
+ $username = '';
 
  $cacheFile = 'lastfm-cache.json';
  $cacheTime = 30;
